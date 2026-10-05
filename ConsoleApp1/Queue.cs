@@ -1,21 +1,24 @@
-Queue<string> Q = new Queue<string>();
-
-void Enqueue(string y)
+internal static class Queue
 {
-    Q.Enqueue(y);
-    Console.WriteLine($"Queued {y}");
-}
+    static Queue<string> Q = new Queue<string>();
 
-void Process()
-{
-    if (Q.Count == 0)
+    internal static void Enqueue(string y)
     {
-        Console.WriteLine("Queue is empty");
-        return;
+        Q.Enqueue(y);
+        Console.WriteLine($"Queued {y}");
     }
 
-    string val = Q.Dequeue();
-    Console.WriteLine($"Processed {val}");
+    internal static void Process()
+    {
+        if (Q.Count == 0)
+        {
+            Console.WriteLine("Queue is empty");
+            return;
+        }
+
+        string val = Q.Dequeue();
+        Console.WriteLine($"Processed {val}");
+    }
 }
 
-Enqueue("A"); Enqueue("B"); Process(); Process();
+// Enqueue("A"); Enqueue("B"); Process(); Process();
