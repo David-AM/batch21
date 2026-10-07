@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿#region Coba-coba
 // static int Factorial(int x)
 // {
 //     if (x == 0) return 1;
@@ -57,70 +57,70 @@ int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 int lastElement = numbers[^1];
 // Console.WriteLine(lastElement);
 
-int[] number = { 2, 5, 7, 8, 10 };
-var result = number.Where(n => n > 5).Select(n => n * 2);
-foreach (var n in result)
-{
-    // Console.WriteLine(n);
-}
+// int[] number = { 2, 5, 7, 8, 10 };
+// var result = number.Where(n => n > 5).Select(n => n * 2);
+// foreach (var n in result)
+// {
+//     // Console.WriteLine(n);
+// }
 
-static void Generate(int x)
-{
-    for (int i = 1; i <= x; i++)
-    {
-        if (i % 3 == 0 && i % 5 == 0)
-        {
-            Console.Write("FooBar ");
-        }
-        else if (i % 3 == 0)
-        {
-            Console.Write("Foo ");
-        }
-        else if (i % 5 == 0)
-        {
-            Console.Write("Bar ");
-        }
-        else
-        {
-            Console.Write($"{i} ");
-        }
-    }
-}
+// static void Generate(int x)
+// {
+//     for (int i = 1; i <= x; i++)
+//     {
+//         if (i % 3 == 0 && i % 5 == 0)
+//         {
+//             Console.Write("FooBar ");
+//         }
+//         else if (i % 3 == 0)
+//         {
+//             Console.Write("Foo ");
+//         }
+//         else if (i % 5 == 0)
+//         {
+//             Console.Write("Bar ");
+//         }
+//         else
+//         {
+//             Console.Write($"{i} ");
+//         }
+//     }
+// }
 
 // Generate(15);
 
-Queue<string> Q = new Queue<string>();
+// Queue<string> Q = new Queue<string>();
 
-void Enqueue(string y)
-{
-    Q.Enqueue(y);
-    Console.WriteLine($"Queued {y}");
-}
+// void Enqueue(string y)
+// {
+//     Q.Enqueue(y);
+//     Console.WriteLine($"Queued {y}");
+// }
 
-void Process()
-{
-    if (Q.Count == 0)
-    {
-        Console.WriteLine("Queue is empty");
-        return;
-    }
+// void Process()
+// {
+//     if (Q.Count == 0)
+//     {
+//         Console.WriteLine("Queue is empty");
+//         return;
+//     }
 
-    string val = Q.Dequeue();
-    Console.WriteLine($"Processed {val}");
-}
+//     string val = Q.Dequeue();
+//     Console.WriteLine($"Processed {val}");
+// }
 
 // Enqueue("A"); Enqueue("B"); Process(); Process();
-Stack<string> words = new Stack<string>();
-void Type(String y)
-{
-    words.Push(y);
-    Console.WriteLine($"Typed {words.Peek()}");
-}
-void Undo()
-{
-    string topWord = words.Pop();
-    Console.WriteLine($"Undid {topWord}");
-}
+// Stack<string> words = new Stack<string>();
+// void Type(String y)
+// {
+//     words.Push(y);
+//     Console.WriteLine($"Typed {words.Peek()}");
+// }
+// void Undo()
+// {
+//     string topWord = words.Pop();
+//     Console.WriteLine($"Undid {topWord}");
+// }
 
 // Type("foo"); Type("bar"); Undo(); Undo();
 // public class Node
@@ -163,11 +163,16 @@ void Undo()
 //         name = n; // Initialization code
 //     }
 // }
+#endregion
 
-FooBar.Generate(15);
-Queue.Enqueue("A"); Queue.Enqueue("B"); Queue.Process(); Queue.Process();
-Stack.Type("foo"); Stack.Type("bar"); Stack.Undo(); Stack.Undo();
+#region Output Excercise
+// FooBar.Generate(15);
+// Queue.Enqueue("A"); Queue.Enqueue("B"); Queue.Process(); Queue.Process();
+// Stack.Type("foo"); Stack.Type("bar"); Stack.Undo(); Stack.Undo();
+LinkedList.List.Append(5); LinkedList.List.Append(10); LinkedList.List.Print();
+#endregion
 
+#region Coba-coba2
 var rect = new Rectangle(3, 4);
 // (float width, float height) = rect; // Deconstruction call 
 // rect.Deconstruct(out float width, out float height);
@@ -176,6 +181,19 @@ var (width, height) = rect;
 Bunny b1 = new Bunny { Name = "Bo", LikesCarrots = true, LikesHumans = false }; 
 Bunny b2 = new Bunny("Bo") { LikesCarrots = false, LikesHumans = false }; 
 // Console.WriteLine(b2.LikesCarrots + " " + b2.Name);
+
+Sentence s = new Sentence();
+// Console.WriteLine(s[3]);
+s[3] = "kangaroo"; 
+// Console.WriteLine(s[1]);
+
+// Display(msft);    // Calls Display with a Stock object
+// Display(mansion);
+
+// static void Display(Asset asset) // Accepts an Asset or any of its subclasses
+// {
+//     System.Console.WriteLine(asset.Name);
+// }
 class Rectangle
 {
     public readonly float Width, Height;
@@ -195,3 +213,15 @@ public class Bunny
     public Bunny() { }
     public Bunny(string n) => Name = n;
 }
+
+class Sentence
+{
+    string[] words = "The quick brown fox".Split();
+
+    public string this[int wordNum] // Indexer definition 
+    {
+        get { return words[wordNum]; }
+        set { words[wordNum] = value; }
+    }
+}
+#endregion
