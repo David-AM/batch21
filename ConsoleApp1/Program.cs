@@ -165,12 +165,20 @@ int lastElement = numbers[^1];
 // }
 #endregion
 
+
+
+
 #region Output Excercise
 // FooBar.Generate(15);
 // Queue.Enqueue("A"); Queue.Enqueue("B"); Queue.Process(); Queue.Process();
 // Stack.Type("foo"); Stack.Type("bar"); Stack.Undo(); Stack.Undo();
-LinkedList.List.Append(5); LinkedList.List.Append(10); LinkedList.List.Print();
+// LinkedList.List.Append(5); LinkedList.List.Append(10); LinkedList.List.Print();
+CircularQueue.Log(1); CircularQueue.Log(2); CircularQueue.Log(3); CircularQueue.Log(4); 
+CircularQueue.Read();
 #endregion
+
+
+
 
 #region Coba-coba2
 var rect = new Rectangle(3, 4);
