@@ -176,6 +176,8 @@ int lastElement = numbers[^1];
 // CircularQueue.Log(1); CircularQueue.Log(2); CircularQueue.Log(3); CircularQueue.Log(4); 
 // CircularQueue.Read();
 // FooBarJazz.Generate(105);
+// VIPQueue.Enqueue("A"); VIPQueue.Enqueue("B"); VIPQueue.EnqueueVip("C"); VIPQueue.Process(); VIPQueue.Process(); VIPQueue.Process();
+// StackLimit.Type("A"); StackLimit.Type("B"); StackLimit.Type("C"); StackLimit.Type("D"); StackLimit.Undo();
 #endregion
 
 
@@ -203,6 +205,32 @@ s[3] = "kangaroo";
 // {
 //     System.Console.WriteLine(asset.Name);
 // }
+
+// internal static class StackLimit
+// {
+//     static Stack<string> words = new Stack<string>();
+//     private const int capacity = 3;
+//     internal static void Type(string y)
+//     {
+//         if (words.Count >= capacity)
+//         {
+//             Console.WriteLine($"Dropped Bottom, Typed {y}");
+//             words.Pop();
+//         }
+//         else
+//         {
+//             Console.WriteLine($"Typed {y}");
+//         }
+//         words.Push(y);
+//     }
+//     internal static void Undo()
+//     {
+//         string botWords = words.Pop();
+//         Console.WriteLine($"Undid {botWords}");
+//     }
+// }
+
+// // Type("A"), Type("B"), Type("C"), Type("D"), Undo()
 class Rectangle
 {
     public readonly float Width, Height;
