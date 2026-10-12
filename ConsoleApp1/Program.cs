@@ -173,8 +173,9 @@ int lastElement = numbers[^1];
 // Queue.Enqueue("A"); Queue.Enqueue("B"); Queue.Process(); Queue.Process();
 // Stack.Type("foo"); Stack.Type("bar"); Stack.Undo(); Stack.Undo();
 // LinkedList.List.Append(5); LinkedList.List.Append(10); LinkedList.List.Print();
-CircularQueue.Log(1); CircularQueue.Log(2); CircularQueue.Log(3); CircularQueue.Log(4); 
-CircularQueue.Read();
+// CircularQueue.Log(1); CircularQueue.Log(2); CircularQueue.Log(3); CircularQueue.Log(4); 
+// CircularQueue.Read();
+// FooBarJazz.Generate(105);
 #endregion
 
 
