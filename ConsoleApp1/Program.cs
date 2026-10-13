@@ -177,7 +177,7 @@ int lastElement = numbers[^1];
 // CircularQueue.Read();
 // FooBarJazz.Generate(105);
 // VIPQueue.Enqueue("A"); VIPQueue.Enqueue("B"); VIPQueue.EnqueueVip("C"); VIPQueue.Process(); VIPQueue.Process(); VIPQueue.Process();
-// StackLimit.Type("A"); StackLimit.Type("B"); StackLimit.Type("C"); StackLimit.Type("D"); StackLimit.Undo();
+StackLimit.Type("A"); StackLimit.Type("B"); StackLimit.Type("C"); StackLimit.Type("D"); StackLimit.Undo();
 #endregion
 
 
