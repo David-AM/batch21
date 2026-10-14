@@ -173,11 +173,12 @@ int lastElement = numbers[^1];
 // Queue.Enqueue("A"); Queue.Enqueue("B"); Queue.Process(); Queue.Process();
 // Stack.Type("foo"); Stack.Type("bar"); Stack.Undo(); Stack.Undo();
 // LinkedList.List.Append(5); LinkedList.List.Append(10); LinkedList.List.Print();
-// CircularQueue.Log(1); CircularQueue.Log(2); CircularQueue.Log(3); CircularQueue.Log(4); 
-// CircularQueue.Read();
+// CircularQueue.Log(1); CircularQueue.Log(2); CircularQueue.Log(3); CircularQueue.Log(4); CircularQueue.Read();
+// CircularQueueOver.Log(1); CircularQueueOver.Log(2); CircularQueueOver.Log(3); CircularQueueOver.Log(4); CircularQueueOver.Read();
 // FooBarJazz.Generate(105);
 // VIPQueue.Enqueue("A"); VIPQueue.Enqueue("B"); VIPQueue.EnqueueVip("C"); VIPQueue.Process(); VIPQueue.Process(); VIPQueue.Process();
-StackLimit.Type("A"); StackLimit.Type("B"); StackLimit.Type("C"); StackLimit.Type("D"); StackLimit.Undo();
+// StackLimit.Type("A"); StackLimit.Type("B"); StackLimit.Type("C"); StackLimit.Type("D"); StackLimit.Undo();
+// ReverseLinkedList.List.Append(5); ReverseLinkedList.List.Append(10); ReverseLinkedList.List.Append(15); ReverseLinkedList.List.Print(); ReverseLinkedList.List.PrintReverse();
 #endregion
 
 
@@ -189,7 +190,7 @@ var rect = new Rectangle(3, 4);
 // rect.Deconstruct(out float width, out float height);
 var (width, height) = rect;
 // Console.WriteLine(width + " " + height);
-Bunny b1 = new Bunny { Name = "Bo", LikesCarrots = true, LikesHumans = false }; 
+// Bunny b1 = new Bunny { Name = "Bo", LikesCarrots = true, LikesHumans = false }; 
 Bunny b2 = new Bunny("Bo") { LikesCarrots = false, LikesHumans = false }; 
 // Console.WriteLine(b2.LikesCarrots + " " + b2.Name);
 
@@ -231,6 +232,34 @@ s[3] = "kangaroo";
 // }
 
 // // Type("A"), Type("B"), Type("C"), Type("D"), Undo()
+
+// internal class CircularQueueOver
+// {
+//     private const int capacity = 3;
+//     private static Queue<int> buffer = new Queue<int>();
+
+//     public static void Log(int val)
+//     {
+
+//         if (buffer.Count == capacity)
+//         {
+//             Console.WriteLine($"Overwritten the oldest with {val}");
+//             buffer.Dequeue();
+//         }
+//         else Console.WriteLine($"Logged {val}");
+        
+//         buffer.Enqueue(val);
+//     }
+
+//     public static void Read()
+//     {
+//         if (buffer.Count == 0) return;
+
+//         int val = buffer.Dequeue();
+
+//         Console.WriteLine($"Read {val}");
+//     }
+// }
 class Rectangle
 {
     public readonly float Width, Height;
@@ -247,7 +276,7 @@ public class Bunny
 {
     public string Name;
     public bool LikesCarrots, LikesHumans;
-    public Bunny() { }
+    // public Bunny() { }
     public Bunny(string n) => Name = n;
 }
 

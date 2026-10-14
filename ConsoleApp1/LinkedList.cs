@@ -1,21 +1,15 @@
 internal static class LinkedList
 {
-    public class LinkedListNode
+    public class LinkedListNode(int data)
     {
-        public int Data;
-        public LinkedListNode Next;
-
-        public LinkedListNode(int data)
-        {
-            Data = data;
-            Next = null;
-        }
+        public int Data = data;
+        public LinkedListNode? Next;
     }
 
     public static class List
     {
-        private static LinkedListNode head;
-        private static LinkedListNode tail;
+        private static LinkedListNode? head;
+        private static LinkedListNode? tail;
 
         public static void Append(int val)
         {
@@ -27,7 +21,7 @@ internal static class LinkedList
             }
             else
             {
-                tail.Next = newNode;
+                tail!.Next = newNode;
                 tail = newNode;
             }
 
@@ -37,7 +31,7 @@ internal static class LinkedList
         public static void Print()
         {
             Console.Write("Sequence: ");
-            LinkedListNode current = head;
+            LinkedListNode? current = head;
 
             while (current != null)
             {
