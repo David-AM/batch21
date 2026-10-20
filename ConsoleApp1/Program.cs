@@ -179,7 +179,8 @@ int lastElement = numbers[^1];
 // StackLimit.Type("A"); StackLimit.Type("B"); StackLimit.Type("C"); StackLimit.Type("D"); StackLimit.Undo();
 // ReverseLinkedList.List.Append(5); ReverseLinkedList.List.Append(10); ReverseLinkedList.List.Append(15); ReverseLinkedList.List.Print(); ReverseLinkedList.List.PrintReverse();
 // CircularQueueOver.Log(1); CircularQueueOver.Log(2); CircularQueueOver.Log(3); CircularQueueOver.Log(4); CircularQueueOver.Read();
-FooBarJazzHuzz.Generate(67);
+// FooBarJazzHuzz.Generate(67);
+// QueuePrio.Enqueue("A", 1); QueuePrio.Enqueue("B", 5); QueuePrio.Enqueue("C", 5); QueuePrio.Process(); QueuePrio.Process();
 #endregion
 
 
