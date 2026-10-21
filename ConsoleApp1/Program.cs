@@ -181,6 +181,7 @@ int lastElement = numbers[^1];
 // CircularQueueOver.Log(1); CircularQueueOver.Log(2); CircularQueueOver.Log(3); CircularQueueOver.Log(4); CircularQueueOver.Read();
 // FooBarJazzHuzz.Generate(67);
 // QueuePrio.Enqueue("A", 1); QueuePrio.Enqueue("B", 5); QueuePrio.Enqueue("C", 5); QueuePrio.Process(); QueuePrio.Process();
+StackRedo.Type("A"); StackRedo.Type("B"); StackRedo.Undo(); StackRedo.Redo();
 #endregion
 
 
