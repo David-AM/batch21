@@ -182,7 +182,8 @@ int lastElement = numbers[^1];
 // FooBarJazzHuzz.Generate(67);
 // QueuePrio.Enqueue("A", 1); QueuePrio.Enqueue("B", 5); QueuePrio.Enqueue("C", 5); QueuePrio.Process(); QueuePrio.Process();
 // StackRedo.Type("A"); StackRedo.Type("B"); StackRedo.Undo(); StackRedo.Redo();
-LinkedListInsert.List.Insert(5); LinkedListInsert.List.Insert(2); LinkedListInsert.List.Insert(8); LinkedListInsert.List.Print();
+// LinkedListInsert.List.Insert(5); LinkedListInsert.List.Insert(2); LinkedListInsert.List.Insert(8); LinkedListInsert.List.Print();
+CircularQueueAlert.Log(1); CircularQueueAlert.Log(2); CircularQueueAlert.Log(3); CircularQueueAlert.Log(4); CircularQueueAlert.Read();
 #endregion
 
 
