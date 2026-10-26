@@ -183,7 +183,14 @@ int lastElement = numbers[^1];
 // QueuePrio.Enqueue("A", 1); QueuePrio.Enqueue("B", 5); QueuePrio.Enqueue("C", 5); QueuePrio.Process(); QueuePrio.Process();
 // StackRedo.Type("A"); StackRedo.Type("B"); StackRedo.Undo(); StackRedo.Redo();
 // LinkedListInsert.List.Insert(5); LinkedListInsert.List.Insert(2); LinkedListInsert.List.Insert(8); LinkedListInsert.List.Print();
-CircularQueueAlert.Log(1); CircularQueueAlert.Log(2); CircularQueueAlert.Log(3); CircularQueueAlert.Log(4); CircularQueueAlert.Read();
+// CircularQueueAlert.Log(1); CircularQueueAlert.Log(2); CircularQueueAlert.Log(3); CircularQueueAlert.Log(4); CircularQueueAlert.Read();
+var generator = new FooBarGenerator.RuleBasedSequenceGenerator()
+        .AddRule(3, "foo")
+        .AddRule(4, "baz")
+        .AddRule(5, "bar")
+        .AddRule(7, "jazz")
+        .AddRule(9, "huzz");
+Console.WriteLine(generator.GenerateSequence(1, 67));
 #endregion
 
 
