@@ -184,13 +184,24 @@ int lastElement = numbers[^1];
 // StackRedo.Type("A"); StackRedo.Type("B"); StackRedo.Undo(); StackRedo.Redo();
 // LinkedListInsert.List.Insert(5); LinkedListInsert.List.Insert(2); LinkedListInsert.List.Insert(8); LinkedListInsert.List.Print();
 // CircularQueueAlert.Log(1); CircularQueueAlert.Log(2); CircularQueueAlert.Log(3); CircularQueueAlert.Log(4); CircularQueueAlert.Read();
-var generator = new FooBarGenerator.RuleBasedSequenceGenerator()
-        .AddRule(3, "foo")
-        .AddRule(4, "baz")
-        .AddRule(5, "bar")
-        .AddRule(7, "jazz")
-        .AddRule(9, "huzz");
-Console.WriteLine(generator.GenerateSequence(1, 67));
+
+// var generator = new FooBarGenerator.RuleBasedSequenceGenerator()
+//         .AddRule(3, "foo")
+//         .AddRule(4, "baz")
+//         .AddRule(5, "bar")
+//         .AddRule(7, "jazz")
+//         .AddRule(9, "huzz");
+// Console.WriteLine(generator.GenerateSequence(1, 67));
+
+// QueuePrioKeyword queue = new QueuePrioKeyword();
+//         //setup:
+//         queue.AddRule("urgent", 10);
+//         queue.AddRule("normal", 5);
+//         //call:
+//         queue.Enqueue("normal");
+//         queue.Enqueue("urgent");
+
+
 #endregion
 
 
