@@ -201,13 +201,26 @@ int lastElement = numbers[^1];
 //         queue.Enqueue("normal");
 //         queue.Enqueue("urgent");
 
-var history = new StackHistory();
-//setup
-history.AddValidationRule(word => !string.IsNullOrWhiteSpace(word));
-history.AddValidationRule(word => word.Length <= 10);
-//call
-history.Type("hello");
-history.Type("");
+// var history = new StackHistory();
+// //setup
+// history.AddValidationRule(word => !string.IsNullOrWhiteSpace(word));
+// history.AddValidationRule(word => word.Length <= 10);
+// //call
+// history.Type("hello");
+// history.Type("");
+
+// var myList = new LinkedListSorting();
+
+// myList.Append(5);
+// myList.Append(2);
+// myList.Append(8);
+// myList.Print();
+
+// myList.SetSorting((a, b) => a.CompareTo(b));
+// myList.Print();
+
+// myList.AddFilter(val => val > 2);
+// myList.Print(); 
 #endregion
 
 
