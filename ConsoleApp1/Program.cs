@@ -201,7 +201,13 @@ int lastElement = numbers[^1];
 //         queue.Enqueue("normal");
 //         queue.Enqueue("urgent");
 
-
+var history = new StackHistory();
+//setup
+history.AddValidationRule(word => !string.IsNullOrWhiteSpace(word));
+history.AddValidationRule(word => word.Length <= 10);
+//call
+history.Type("hello");
+history.Type("");
 #endregion
 
 
@@ -214,12 +220,12 @@ var rect = new Rectangle(3, 4);
 var (width, height) = rect;
 // Console.WriteLine(width + " " + height);
 // Bunny b1 = new Bunny { Name = "Bo", LikesCarrots = true, LikesHumans = false }; 
-Bunny b2 = new Bunny("Bo") { LikesCarrots = false, LikesHumans = false }; 
+Bunny b2 = new Bunny("Bo") { LikesCarrots = false, LikesHumans = false };
 // Console.WriteLine(b2.LikesCarrots + " " + b2.Name);
 
 Sentence s = new Sentence();
 // Console.WriteLine(s[3]);
-s[3] = "kangaroo"; 
+s[3] = "kangaroo";
 // Console.WriteLine(s[1]);
 
 // Display(msft);    // Calls Display with a Stock object
@@ -270,7 +276,7 @@ s[3] = "kangaroo";
 //             buffer.Dequeue();
 //         }
 //         else Console.WriteLine($"Logged {val}");
-        
+
 //         buffer.Enqueue(val);
 //     }
 
