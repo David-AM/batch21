@@ -221,6 +221,16 @@ int lastElement = numbers[^1];
 
 // myList.AddFilter(val => val > 2);
 // myList.Print(); 
+
+var buffer = new CircularQueueBuffer();
+buffer.CircularBuffer(capacity: 3, overwriteEnabled: true);
+buffer.Log(1); 
+buffer.Log(2);
+buffer.Log(3);
+buffer.Log(4);
+
+buffer.SetOverwritePolicy(false);
+buffer.Log(5);
 #endregion
 
 
